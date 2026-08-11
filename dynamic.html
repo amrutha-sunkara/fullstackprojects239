@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Webpage Using JavaScript</title>
+</head>
+<body>
+
+    <h1 id="heading">Welcome to JavaScript</h1>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <br><br>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <button onclick="displayName()">Submit</button>
+
+    <h2 id="output"></h2>
+
+    <script>
+
+        function changeContent() {
+            document.getElementById("heading").innerHTML =
+            "Heading Changed Successfully!";
+        }
+
+        function displayName() {
+            let username = document.getElementById("name").value;
+
+            document.getElementById("output").innerHTML =
+            "Hello, " + username + "! Welcome to JavaScript.";
+        }
+
+    </script>
+
+</body>
+</html>
